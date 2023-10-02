@@ -11,8 +11,9 @@ export default function Page() {
     try {
       const response = await fetch("https://damisaalex.xyz/hngx5/api/videos");
       const data = await response.json();
-      setVideoUrl(data[13].videoUrl);
-      console.log(data);
+      //setVideoUrl(data[13].videoUrl);
+      setVideoUrl(data.pop().videoUrl);
+      console.log(data.pop().videoUrl);
       // setLoading(false);
     } catch (error) {
       console.error("Error fetching video", error);
@@ -31,7 +32,7 @@ export default function Page() {
             <p className=" font-bold text-5xl">Your video is ready!</p>
             <div className="content w-[530px] h-[68px] space-y-14">
               <div className="flex flex-col space-y-2">
-                <span className=" text-xl">Name</span>
+                <span className=" text-lg">Name</span>
                 <span className="flex items-center text-xl font-semibold text-slate-600">
                   Untitled_Video_20232509{" "}
                   <span className="ml-3 cursor-pointer">
@@ -84,7 +85,7 @@ export default function Page() {
 
               {/* Video URL */}
               <div className="flex flex-col space-y-2">
-                <span>Video Url</span>
+                <span className=" text-xl font-semibold">Video Url</span>
                 <div className="wfull justify-center flex items-center border border-[#4B4B4B] rounded-[16px] px-6 py-[10px]">
                   {/* <input
                     type="text"
