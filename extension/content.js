@@ -147,7 +147,7 @@ function onAccessApproved(stream) {
           console.log("Video uploaded successfully:", data);
 
           // Open a new page when the recording stops
-          const newPageUrl = "http://localhost:3000/"; // Replace with the actual URL you want to open
+          const newPageUrl = "https://help-me-out-promise.vercel.app/"; // Replace with the actual URL you want to open
           window.open(newPageUrl, "_blank"); // "_blank" opens a new tab or window
         })
         .catch((error) => {
