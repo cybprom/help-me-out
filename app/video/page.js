@@ -27,12 +27,12 @@ export default function Page() {
       <Header />
       <section className=" mt-10 ml-10">
         <div className="flex">
-          <div className="w-[50%] minw-[600px] flex flex-col p-10 space-y-5">
-            <p className=" font-bold text-2xl">Your video is ready!</p>
-            <div className="content w-[500px] h-[68px] space-y-5">
+          <div className="w-[50%] minw-[600px] flex flex-col p-10 space-y-10">
+            <p className=" font-bold text-5xl">Your video is ready!</p>
+            <div className="content w-[500px] h-[68px] space-y-16">
               <div className="flex flex-col">
-                <span>Name</span>
-                <span className="flex items-center">
+                <span className=" text-xl">Name</span>
+                <span className="flex items-center text-xl font-medium text-slate-600">
                   Untitled_Video_20232509{" "}
                   <span className="ml-3">
                     <svg
@@ -71,13 +71,13 @@ export default function Page() {
               </div>
 
               {/*  Enter Email */}
-              <div className="flex  bg-gray-400 bg-opacity-20 border border-gray-200 rounded-[16px] px-6 py-3 ">
+              <div className="flex justify-between  bg-gray-400 bg-opacity-20 border border-gray-200 rounded-[16px] px-6 py2 py-[10px] ">
                 <input
                   type="text"
-                  className="w-full bg-transparent outline-none px6 py3 placeholder:text-neutral-700 placeholder:text-opacity-80"
-                  placeholder="enter email of receiver"
+                  className="wfull w-[80%] bg-transparent outline-none px6 py3 placeholder:text-neutral-700 placeholder:text-opacity-80"
+                  placeholder="Enter email of receiver"
                 />
-                <button className="px-[18px] py-2.5 bg-gray-500 rounded-lg text-base font-medium  text-white">
+                <button className="px-[18px] py-2.5 bg-[#605C84] hover:bg-gray-500 rounded-lg text-base font-medium text-white">
                   Send
                 </button>
               </div>
