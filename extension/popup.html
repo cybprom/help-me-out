@@ -1,0 +1,204 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help-me-out Screen Recorder</title>
+    <link rel="stylesheet" href="./css/popup.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section classname="section">
+      <div class="header">
+        <div class="logo-header">
+          <img src="./images/logo.svg" alt="logo" />
+          <p class="header-text">HelpMeOut</p>
+        </div>
+
+        <div class="header-icon">
+          <img src="./images/setting.svg" alt="setting" />
+          <img src="./images/close.svg" alt="close" />
+        </div>
+      </div>
+
+      <div class="paragraph">
+        <p>This extension helps you record and share help videos with ease.</p>
+      </div>
+
+      <div class="tab-container">
+        <div class="full-screen">
+          <img src="./images/monitor.svg" alt="monitor icon" />
+          <span class="full-screen_text">Full Screen</span>
+        </div>
+
+        <div class="current-tab">
+          <img src="./images/tabs.svg" alt="tabs icon" />
+          <span class="current-tab_text">Current Tab</span>
+        </div>
+      </div>
+
+      <!--   Toogles -->
+      <div class="toggle-container">
+        <div class="toggle-content">
+          <div class="toggle-item">
+            <img src="./images/video.svg" alt="video icon" />
+            <span class="toggle-text">Camera</span>
+          </div>
+
+          <div class="toggle"></div>
+        </div>
+
+        <div class="toggle-content">
+          <div class="toggle-item">
+            <img src="./images/record.svg" alt="video icon" />
+            <span class="toggle-text">Audio</span>
+          </div>
+
+          <div class="toggle"></div>
+        </div>
+        <!--   Start Recording Btn -->
+        <div id="start_video" class="record-btn">
+          <button class="record-text">Start Recording</button>
+        </div>
+
+        <div class="record-btn">
+          <button id="stop_video" class="record-text">Stop Recording</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="help-me-bubble-control show">
+      <div class="left help-me-bubble-user-img">
+        <div
+          class="hmo-avatar-img hide"
+          style="
+            background-image: url('https://xsgames.co/randomusers/assets/avatars/male/73.jpg');
+          "
+        ></div>
+        <video src="" class="hmo-user-video show"></video>
+      </div>
+      <div data-drag-boundary="true" class="right help-me-bubble-main-controls">
+        <div class="hmo-bubble-counter">
+          <span class="counter-txt hmo-bubble-counter-txt ppSB">00:00:00</span>
+          <div class="hmo-animate-pulse"></div>
+        </div>
+        <div class="bubble-media-controls">
+          <div class="pause-control bubble-controls">
+            <button
+              class="bubble-pause-btn bubble-media-control"
+              name="pause"
+              data-name="pause"
+            >
+              <svg
+                width="128"
+                height="128"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  fill=""
+                  d="M8 19c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2v10c0 1.1.9 2 2 2zm6-12v10c0 1.1.9 2 2 2s2-.9 2-2V7c0-1.1-.9-2-2-2s-2 .9-2 2z"
+                />
+              </svg>
+            </button>
+            <span class="ppReg">Pause</span>
+          </div>
+          <div class="stop-control bubble-controls">
+            <button class="bubble-stop-btn bubble-media-control" name="stop">
+              <svg
+                width="128"
+                height="128"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  fill=""
+                  d="M8 6h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"
+                />
+              </svg>
+            </button>
+            <span class="ppReg">Stop</span>
+          </div>
+          <div class="camera-control bubble-controls">
+            <button
+              class="bubble-camera-btn bubble-media-control"
+              name="camera"
+            >
+              <svg
+                width="128"
+                height="128"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  fill=""
+                  d="M21.53 7.15a1 1 0 0 0-1 0L17 8.89A3 3 0 0 0 14 6H5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h9a3 3 0 0 0 3-2.89l3.56 1.78A1 1 0 0 0 21 17a1 1 0 0 0 .53-.15A1 1 0 0 0 22 16V8a1 1 0 0 0-.47-.85ZM15 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1Zm5-.62l-3-1.5v-1.76l3-1.5Z"
+                />
+              </svg>
+            </button>
+            <span class="ppReg">Camera</span>
+          </div>
+          <div class="audio-control bubble-controls">
+            <button class="bubble-audio-btn bubble-media-control" name="audio">
+              <svg
+                width="128"
+                height="128"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M192 448h128m64-240v32c0 70.4-57.6 128-128 128h0c-70.4 0-128-57.6-128-128v-32m128 160v80"
+                />
+                <path
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M256 64a63.68 63.68 0 0 0-64 64v111c0 35.2 29 65 64 65s64-29 64-65V128c0-36-28-64-64-64Z"
+                />
+              </svg>
+            </button>
+            <span class="ppReg">Audio</span>
+          </div>
+          <div class="bubble-controls">
+            <button class="trash-btn" name="audio">
+              <svg
+                width="128"
+                height="128"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  fill="none"
+                  stroke="#cccc"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 7h16m-10 4v6m4-6v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"
+                />
+              </svg>
+            </button>
+            <span class="hidden">Trash</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
