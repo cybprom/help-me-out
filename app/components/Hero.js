@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import GridDot from "./GridDot";
 
 export default function Hero() {
   return (
@@ -26,6 +27,7 @@ export default function Hero() {
             <div className="justify-start items-center gap-2.5 flex">
               <Link
                 href="https://drive.google.com/drive/folders/1wAZVKuJihs-GLNEP6pepwTvHxkkDxvFM?usp=sharing"
+                target="_blank"
                 className="text-center text-white text-lg font-medium font['Work Sans']"
               >
                 Install HelpMeOut
@@ -43,8 +45,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="w-[330px] h-[313.08px] left-[1058.50px] top-[107px] absolute opacity-30" />
-      <div className="w-[330px] h-[313.08px] left-[661.50px] top-[388px] absolute opacity-50" />
+      {/* <div className="w-[330px] h-[313.08px] left-[1058.50px] top-[107px] absolute opacity-30" /> */}
+      <div className="w-[330px] h-[313.08px] left-[1058.50px] top-[107px] absolute opacity-40">
+        <GridDot />
+      </div>
+      {/* <div className="w-[330px] h-[313.08px] left-[661.50px] top-[388px] absolute opacity-50" /> */}
+      <div className="w-[330px] h-[300px] left-[661.50px] top-[300px] absolute opacity-20">
+        <GridDot />
+      </div>
       <div className="w-[311px] h-[214px] left-[704px] top-[165px] absolute rounded-lg border-2 justify-center items-center inline-flex">
         <Image src="/image1.png" width={370} height={220} alt="image" />
       </div>
