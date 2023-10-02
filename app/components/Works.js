@@ -22,9 +22,9 @@ export default function Works() {
                 </div>
               </div>
               <div className="w-[358px] text-center text-zinc-600 text-xl font-normal font['Work Sans'] leading-[30.26px]">
-                Click the "Start Recording" button in our extension. choose
-                which part of your screen to capture and who you want to send it
-                to.
+                Click the &quot;Start Recording&quot; button in our extension.
+                choose which part of your screen to capture and who you want to
+                send it to.
               </div>
             </div>
           </div>
