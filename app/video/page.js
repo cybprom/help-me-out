@@ -25,16 +25,16 @@ export default function Page() {
   return (
     <>
       <Header />
-      <section className=" mt-10 ml-10">
+      <section className=" mt-12 container mx-auto ml10">
         <div className="flex">
           <div className="w-[50%] minw-[600px] flex flex-col p-10 space-y-10">
             <p className=" font-bold text-5xl">Your video is ready!</p>
-            <div className="content w-[500px] h-[68px] space-y-16">
-              <div className="flex flex-col">
+            <div className="content w-[530px] h-[68px] space-y-14">
+              <div className="flex flex-col space-y-2">
                 <span className=" text-xl">Name</span>
-                <span className="flex items-center text-xl font-medium text-slate-600">
+                <span className="flex items-center text-xl font-semibold text-slate-600">
                   Untitled_Video_20232509{" "}
-                  <span className="ml-3">
+                  <span className="ml-3 cursor-pointer">
                     <svg
                       width="33"
                       height="32"
@@ -81,19 +81,58 @@ export default function Page() {
                   Send
                 </button>
               </div>
+
+              {/* Video URL */}
+              <div className="flex flex-col space-y-2">
+                <span>Video Url</span>
+                <div className="wfull justify-center flex items-center border border-[#4B4B4B] rounded-[16px] px-6 py-[10px]">
+                  {/* <input
+                    type="text"
+                    className="wfull w-[80%] bg-transparent outline-none px6 py3 placeholder:text-neutral-700 placeholder:text-opacity-80"
+                    placeholder="Enter email of receiver"
+                  /> */}
+                  <span className="mr-3">
+                    https://www.helpmeout/Untitled_Video_20232509
+                  </span>
+                  <button className=" -mr-4 flex px-[15px] py-2.5 bg-white text-[#120B48] border border-[#120B48] rounded-lg text-base font-medium">
+                    <span className="mr-2">
+                      <svg
+                        width="19"
+                        height="20"
+                        viewBox="0 0 19 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.66699 12.4998H2.83366C2.39163 12.4998 1.96771 12.3242 1.65515 12.0117C1.34259 11.6991 1.16699 11.2752 1.16699 10.8332V3.33317C1.16699 2.89114 1.34259 2.46722 1.65515 2.15466C1.96771 1.8421 2.39163 1.6665 2.83366 1.6665H10.3337C10.7757 1.6665 11.1996 1.8421 11.5122 2.15466C11.8247 2.46722 12.0003 2.89114 12.0003 3.33317V4.1665M8.66699 7.49984H16.167C17.0875 7.49984 17.8337 8.24603 17.8337 9.1665V16.6665C17.8337 17.587 17.0875 18.3332 16.167 18.3332H8.66699C7.74652 18.3332 7.00033 17.587 7.00033 16.6665V9.1665C7.00033 8.24603 7.74652 7.49984 8.66699 7.49984Z"
+                          stroke="#120B48"
+                          stroke-width="1.67"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                    Copy
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div className=" w-[50%] border-l p-3">
-            <video
-              src={`https://damisaalex.xyz/hngx5/${videoUrl}`}
-              width={620}
-              height={540}
-              controls
-            ></video>
+
+          <div className=" flex flex-col w-[50%] border-l-2 pl-10 p-3">
+            <div className="border border-[#292D32] rounded-xl overflow-hidden">
+              <video
+                src={`https://damisaalex.xyz/hngx5/${videoUrl}`}
+                width={620}
+                height={520}
+                controls
+                className="w-full"
+              ></video>
+            </div>
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
