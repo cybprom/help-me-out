@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="w-full h-[84px] px-24 mx-auto px[100px] py-3 bg-white justify-between items-center gap-[351px] inline-flex border-b">
+    <div className="w-full h-[84px] px-14 md:px-24 mx-auto px[100px] py-3 bg-white justify-between items-center gap-[200px] md:gap-[351px] inline-flex border-b">
       <div className="flex items-center space-x-3 ">
         <Image src="/LogoIcon.svg" alt="Logo" width={40} height={40} />
         <span className="text-indigo-950 font-bold text-xl">HelpMeOut</span>
       </div>
-      <div className="flex items-center space-x-10 font-medium">
+      <div className="hidden md:flex items-center space-x-10 font-medium">
         <div>Features</div>
         <div>How It Works</div>
       </div>
