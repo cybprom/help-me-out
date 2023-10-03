@@ -38,7 +38,10 @@ export default function Page() {
         <Loader />
       ) : (
         <section className=" mt-12 container mx-auto ml10">
-          <div className="flex flex-col-reverse md:flex-row">
+          <div className="mt-[50%] grid place-items-center text-3xl text-black font-bold md:hidden">
+            Oops, Not Responsive Yet!
+          </div>
+          <div className="hidden md:flex flex-col-reverse md:flex-row">
             <div className="w-[50%] minw-[600px] flex flex-col p-10 space-y-10">
               <p className=" font-bold text-5xl">Your video is ready!</p>
               <div className="content w-[530px] h-[68px] space-y-14">
