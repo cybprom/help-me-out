@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -10,13 +11,20 @@ export default function Header() {
           HelpMeOut
         </span>
       </div>
-      <div className="hidden md:flex items-center space-x-10 font-medium">
-        <div className=" font-work font-medium">Features</div>
-        <div className=" font-work font-medium">How It Works</div>
+      <div className="hidden md:flex items-center space-x-14 font-medium">
+        <Link href="#features" className=" font-work font-medium">
+          Features
+        </Link>
+        <Link href="#works" className=" font-work font-medium">
+          How It Works
+        </Link>
       </div>
-      <div className="text-indigo-950 text-lg font-semibold font-sora">
+      <Link
+        href="/login"
+        className="text-indigo-950 text-lg font-semibold font-sora"
+      >
         Get Started
-      </div>
+      </Link>
 
       {/* <div className="p-2.5 flex-col justify-start items-start gap-2.5 inline-flex">
         <div className="justify-start items-center gap-2.5 inline-flex">

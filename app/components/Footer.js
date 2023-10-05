@@ -1,78 +1,69 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="">
-      <div className="max-w-[1440px] mx-auto h-[347px] px-[130px] py-[98px] bg-indigo-950 justifystart items-start gap-[243px] inline-flex">
-        <div className="p-2.5 flex-col justify-start items-start gap-2.5 inline-flex">
-          <div className="justify-start items-center gap-2.5 inline-flex">
-            <div className="justify-start items-center gap-2 flex">
-              <div className="w-10 h-10 relative">
-                <Image
-                  src="/LogoIconWhite.svg"
-                  width={40}
-                  height={40}
-                  alt="Logo"
-                />
-              </div>
-              <div className="text-white text-xl font-bold font['Inter']">
-                HelpMeOut
-              </div>
+    <>
+      <div className="bg-[#120B48] px-24 py-16 text-white">
+        <div className="flex justify-between mx-auto container">
+          <div className="flex items-center itemsstart">
+            <div className="mr-2">
+              <Image
+                src="/LogoIconWhite.svg"
+                width={40}
+                height={40}
+                alt="Logo"
+              />
+            </div>
+            <div className="text-white text-xl font-bold font['Inter']">
+              HelpMeOut
             </div>
           </div>
-        </div>
-        <div className="justify-start items-start gap-[220px] flex">
-          <div className="flex-col justify-start items-start gap-[26px] inline-flex">
-            <div className="text-white text-base font-semibold font['Sora']">
-              Menu
-            </div>
-            <div className="flex-col justify-start items-start gap-6 flex">
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Home
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Converter
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                How it Works
-              </div>
-            </div>
+
+          {/* NAVS */}
+          <div className="flex flex-col space-y-5">
+            <h1 className=" font-sora font-semibold text-lg">Menu</h1>
+            <Link href="/" className=" font-work font-normal text-base">
+              Home
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              Converter
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              How it Works
+            </Link>
           </div>
-          <div className="flex-col justify-start items-start gap-[26px] inline-flex">
-            <div className="text-white text-base font-semibold font['Sora']">
-              About us
-            </div>
-            <div className="flex-col justify-start items-start gap-6 flex">
-              <div className="text-white text-base font-normal font['Work Sans']">
-                About
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Contact Us
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Privacy Policy
-              </div>
-            </div>
+
+          {/* About Us */}
+          <div className="flex flex-col space-y-5">
+            <h1 className=" font-sora font-semibold text-lg">About Us</h1>
+            <Link href="/" className=" font-work font-normal text-base">
+              About
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              Contact Us
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              Privacy Policy
+            </Link>
           </div>
-          <div className="flex-col justify-start items-start gap-6 inline-flex">
-            <div className="text-white text-base font-semibold font['Sora']">
-              Screen Record
-            </div>
-            <div className="flex-col justify-start items-start gap-6 flex">
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Browser Window
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Desktop
-              </div>
-              <div className="text-white text-base font-normal font['Work Sans']">
-                Application
-              </div>
-            </div>
+
+          {/* Screen Record */}
+          <div className="flex flex-col space-y-5">
+            <h1 className=" font-sora font-semibold text-lg">Screen Record</h1>
+            <Link href="/" className=" font-work font-normal text-base">
+              Browse Window
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              Desktop
+            </Link>
+            <Link href="/" className=" font-work font-normal text-base">
+              Application
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

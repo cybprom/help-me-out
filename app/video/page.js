@@ -254,7 +254,7 @@ export default function Page() {
                   </select>
                 </div>
                 {/* Transcript Content */}
-                <div className=" mt-8 h-[178px] overflow-y-scroll">
+                <div className=" mt-8 h-[175px] overflow-y-scroll">
                   <div className=" p-[10px] space-y-4">
                     <div className="flex space-x-5">
                       <div>0.01</div>
@@ -318,7 +318,7 @@ export default function Page() {
           </div>
         </>
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
