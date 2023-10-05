@@ -6,13 +6,17 @@ export default function Header() {
     <div className="w-full h-[84px] px-14 md:px-24 mx-auto px[100px] py-3 bg-white justify-between items-center gap-[200px] md:gap-[351px] inline-flex border-b">
       <div className="flex items-center space-x-3 ">
         <Image src="/LogoIcon.svg" alt="Logo" width={40} height={40} />
-        <span className="text-indigo-950 font-bold text-xl">HelpMeOut</span>
+        <span className="text-indigo-950 font-bold font-inter text-xl">
+          HelpMeOut
+        </span>
       </div>
       <div className="hidden md:flex items-center space-x-10 font-medium">
-        <div>Features</div>
-        <div>How It Works</div>
+        <div className=" font-work font-medium">Features</div>
+        <div className=" font-work font-medium">How It Works</div>
       </div>
-      <div className="text-indigo-950 text-lg font-semibold">Get Started</div>
+      <div className="text-indigo-950 text-lg font-semibold font-sora">
+        Get Started
+      </div>
 
       {/* <div className="p-2.5 flex-col justify-start items-start gap-2.5 inline-flex">
         <div className="justify-start items-center gap-2.5 inline-flex">
