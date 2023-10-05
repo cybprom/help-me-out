@@ -262,8 +262,8 @@ export default function Page() {
                   #fff); */}
                       <div className=" font-inter font-medium">
                         First step. Open Facebook on your desktop or mobile
-                        device and locate "Marketplace" in the left-hand menu or
-                        at the top of the
+                        device and locate &quot;Marketplace&quot; in the
+                        left-hand menu or at the top of the
                       </div>
                     </div>
 
@@ -271,8 +271,8 @@ export default function Page() {
                       <div>0.15</div>
                       <div className=" font-inter font-medium">
                         First step. Open Facebook on your desktop or mobile
-                        device and locate "Marketplace" in the left-hand menu or
-                        at the top of the
+                        device and locate &quot;Marketplace&quot; in the
+                        left-hand menu or at the top of the
                       </div>
                     </div>
 
@@ -280,8 +280,8 @@ export default function Page() {
                       <div>0.30</div>
                       <div className=" font-inter font-medium">
                         First step. Open Facebook on your desktop or mobile
-                        device and locate "Marketplace" in the left-hand menu or
-                        at the top of the
+                        device and locate &quot;Marketplace&quot; in the
+                        left-hand menu or at the top of the
                       </div>
                     </div>
 
@@ -289,8 +289,8 @@ export default function Page() {
                       <div>1.00</div>
                       <div className=" font-inter font-medium">
                         First step. Open Facebook on your desktop or mobile
-                        device and locate "Marketplace" in the left-hand menu or
-                        at the top of the
+                        device and locate &quot;Marketplace&quot; in the
+                        left-hand menu or at the top of the
                       </div>
                     </div>
                   </div>
